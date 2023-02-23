@@ -1,0 +1,10 @@
+body{
+    background-color:rgb(255, 157, 157);
+}
+input{
+    border-radius: 7px;
+}
+fieldset{
+    border-radius: 7px;
+    background-color: rgb(227, 120, 120);
+}

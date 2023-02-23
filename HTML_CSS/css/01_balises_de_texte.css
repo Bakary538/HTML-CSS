@@ -1,0 +1,29 @@
+h1{
+    text-transform: uppercase;
+    /* transformation de texte */
+}
+h3{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    /* text-align :permet d'aligner le texte à gauche,
+    à droite, justifié ou le centre ici -> centrer le texte */
+    font-style: italic;
+    /* style de police */
+    font-weight: bold;
+    /* l'epaisseur de la police
+    100 -> tres fin, 900 -> tres epais */
+}
+p span{
+    font-size: 10px;
+}
+
+h4 span{
+    color: red;
+}
+
+ul li{
+    list-style-type: disc;
+}
+/* ul li: selectionne tous les li qui se trouve dans un element ul
+list-style-type : permet de specifier le type de puce
+ */

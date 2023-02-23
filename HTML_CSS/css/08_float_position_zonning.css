@@ -1,0 +1,480 @@
+body{
+    background-color: antiquewhite;
+    background-image: url(../img/concrete-texture.png);
+}
+
+header{
+    background-color: #6a7a78;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* box-sizing permet de ne pas augmenter la taille d'un element meme quand ont rajoute des bordure  */
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 50px 0;
+}
+h1 span{
+    color: #1B385C;
+    font-weight: bolder;
+}
+main{
+    background-color: rgba(178, 178, 178, .30);
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+}
+section{
+    margin: 70px;
+}
+h2{
+    color: #A62946;
+    font-size: 30px;
+    padding: 30px;
+}
+h3{
+    font-size: 25px;
+    color: #1B385C;
+    font-style: italic;
+    padding: 25px;
+}
+.carre{
+    height: 170px;
+    width: 170px;
+    background-color: #f8d771;
+    margin: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #004445;
+    border: 2px solid darkred;
+    line-height: 170px;
+}
+
+.alignement{
+    float: left;
+}
+
+.superpose{
+    clear: both;
+}
+.chat{
+    background-image: url(../img/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 450px;
+    border: 5px solid #fff;
+    float: left;
+}
+
+/* Un  element en position absolute : sort du flux et va se positionner par rapport a son dernier ancetre positionné. Si aucun parent n'est positionné l'element se positionne par defaut par rapport a l'element racine <html>*/
+.absolute{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* Un element de position absolute est positioner par rapport a son parent ou ancetre */
+    left: 10%;
+    top: 24%;
+}
+
+.exo2{
+    border: 1px solid #fff;
+    width: 25%;
+    height: 200px;
+    float: left;
+}
+.grisf{
+    background-color: darkgray;
+}
+.lgris{
+    background-color: lightgrey;
+}
+
+.pink{
+    height: 70px;
+    background-color: pink;
+}
+.relative{
+    position: relative;
+    background-color: #2d5c7f;
+    width: 400px;
+    height: 400px;
+}
+
+.relative div{
+    position: absolute;
+    background-color: orangered;
+    width: 50px;
+    height: 50px;
+    right: 0;
+}
+.blocPhotoSf{
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.blocPhotoSf img{
+    width: 100%;
+}
+.photoSfLegende{
+    background-color: rgba(0, 0, 0, .75);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    position: absolute  ;
+    width: 100%;
+    bottom: -90px;
+
+}
+.blocPhotoSf:hover .photoSfLegende{
+    bottom: 0;
+    transition: .6s;
+}
+.cake{
+    width: 400px;
+    position: relative;
+}
+.cup{
+    background-color: rgba(0, 0, 0, .75);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    position: absolute  ;
+    width: 100%;
+    bottom: 100px;
+}
+.cake img{
+    width: 100%;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: rgba(149, 192, 227);
+  font-size: 50px !important;
+}
+.btnRetour{
+    position: fixed;
+    bottom: 40px;
+    right: 200px;
+}
+
+.rela{
+    position: relative;
+}
+
+.rouge,.vert,.bleu{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+}
+.rouge{
+    background-color: red;
+    z-index: 3;
+    top: 20px;
+    left: 20px;
+}
+.vert{
+    background-color: green;
+    z-index: 2;
+    top: 40px;
+    left: 40px;
+}
+.bleu{
+    background-color: blue;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+}
+.positionnement{
+    height: 300px;
+}
+#zoning{
+    background-color: #ffd6d6;
+    border: 1px solid white;
+    width: 798px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    /* approfondir les recherche sur overflow: hidden (mdn overflow) */
+}
+#zoning header{
+    background-color: #f7f39a;
+    height: 70px;
+}
+
+#zoning aside{
+    background-color: #10828c;
+    height: 525px;
+    width: 20%;
+    color: red;
+    float: left;
+}
+#zoning section{
+    background-color: #388171;
+    height: 525px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#zoning2{
+    background-color: #ffd6d6;
+    border: 1px solid white;
+    width: 798px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.tete{
+    background-color: grey;
+    border: 1px solid white;
+    width: 798px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    line-height: 50px;
+}
+#gauche{
+    width: 20%;
+    height: 525px;
+    background-color: red;
+    float: left;
+    line-height: 525px;
+}
+.milieu{
+    background-color: #ffd6d6;
+    width: 60%;
+    height: 525px;
+    text-align: center;
+    float: left;
+    line-height: 525px;
+}
+#droite{
+    width: 20%;
+    height: 525px;
+    background-color: red;
+    float: left;
+    line-height: 525px;
+}
+
+#zoning3{
+    width: 800px;
+    background-color: #ffd6d6;
+    text-align: center;
+    margin: auto;
+}
+
+#un,#trois{
+    width: 25%;
+    height: 180px;
+    background-color: #1B385C;
+    float: left;
+    color: white;
+}
+#deux{
+    width: 50%;
+    height: 180px;
+    background-color: #2d5c7f;
+    float: left;
+    color: white;
+}
+#zoning3 header{
+    height: 80px;
+    width: 100%;
+    background-color: #10828c;
+    color: white;
+}
+#quatre{
+    height: 700px;
+    width: 25%;
+    background-color: #2d5c7f;
+    float: left;
+    color: white;
+}
+#cinq{
+    height: 250px;
+    width: 37.5%;
+    background-color:lightgray ;
+    float: left;
+    color: white;
+}
+#six{
+    height: 250px;
+    width: 37.5%;
+    background-color: #1B385C;
+    float: left;
+    color: white;
+}
+#sept{
+    width: 75%;
+    height: 200px;
+    background-color: #388171;
+    float: left;
+    color: white;
+}
+#huit,#neuf,#dix,#onze{
+    width: 18.75%;
+    height: 250px;
+    float: left;
+    color: white;
+}
+#huit{
+    background-color: lightgray;
+}
+#neuf{
+    background-color: #1B385C;
+}
+#dix{
+    background-color: lightgray;
+}
+#onze{
+    background-color: #1B385C;
+}
+
+#zoning4{
+    background-color: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+#zoning4 header{
+    height: 80px;
+    width: 100%;
+    background-color: yellow;
+}
+#zoning4 nav{
+    height: 80px;
+    width: 100%;
+    background-color: #6a7a78;
+}
+#z1{
+    width: 50%;
+    height: 300px;
+
+    float: left;
+    background-color: #f8d771;
+}
+#z2{
+    width: 50%;
+    height: 300px;
+
+    float: left;
+    background-color: #f7f39a;
+}
+#z3{
+    width: 50%;
+    height: 300px;
+
+    float: left;
+    background-color: #f8d771;
+}
+#z4{
+    width: 50%;
+    height: 300px;
+
+    float: left;
+    background-color: #f7f39a;
+}
+#zoning4 footer{
+    height: 120px;
+    width: 100%;
+    background-color: lightskyblue;
+}
+#z1,#z2,#z3,#z4{
+    border: black solid 1px;
+}
+
+/* 
+#zoning3 {
+    background-color: #ffd6d6; 
+    width: 800px;
+    color: white;
+    text-align: center  ;
+}
+
+#zoning3 header {
+    background-color: #818e8c;
+    height: 180px;
+}
+
+#zoning3 header .haut  {
+    background-color: #203562;
+    width: 20%;
+    height: 180px;
+    float: left;
+  
+}
+#zoning3 header .haut1 {
+    background-color: #3e588f;
+    width: 60%;
+    float: left;
+    height: 180px;
+}
+
+#zoning3 nav {
+    background-color: #085269;
+    height: 80px;
+}
+
+#zoning3 aside {
+    background-color: #446878;
+    height: 750px;
+    width: 20%;
+    float: left;
+}
+#section {
+    float: left;
+    width: 80%;
+    margin: 0;
+}
+
+#zoning3 section .a {
+    background-color: #c0c5cd;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+#zoning3 section .b {
+    background-color: #203562;
+    float: left;
+    width: 50%;
+    height: 250px;
+
+}
+
+#zoning3 section.slideshow {
+  background-color: #314a52 ;
+  height: 200px;
+  margin: 0;
+}
+
+#zoning3 .c {
+    background: #c0c5cd;
+    float: left;
+    width: 25%;
+    height: 300px;
+
+}
+#zoning3  .d {
+    background: #203562;
+     float: left;
+     width: 25%;
+     height: 300px;
+} */

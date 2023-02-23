@@ -1,0 +1,6 @@
+div{
+    width:50px;
+}
+h1:nth-child(1){
+    float: left;
+}

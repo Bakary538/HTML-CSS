@@ -1,0 +1,150 @@
+body{
+    background-color: pink;
+}
+
+h1{
+    color: blue;
+}
+
+div{
+    background-color: brown;
+    width: 50%;
+    padding: 5px;
+}
+
+div p{
+    /* section puis p = dans la section je veux les p */
+    color: aliceblue;
+}
+
+div :first-child{
+    /* pseudo class :first-child -> disigne le premier element enfant*/
+    color: blueviolet;
+}
+
+div :nth-child(2){
+    /* Pseudo-class :nth-child() -> permet d'acceder a une element depuis son indice */
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+div :last-child{
+    /* pseudo class :last-child -> designe le dernier element efant */
+    background-color: chartreuse;
+}
+
+div :nth-child(even){
+    /* element pair */
+    background-color: darkviolet;
+}
+
+div :nth-child(odd){
+    /* element impair */
+    background-color: lightgreen;
+}
+
+div :nth-child(3), div :nth-child(6){
+    text-transform:uppercase;
+}
+
+section.select p{
+    /* ici j'applique la couleur sur les elements p qui se trouvent dans l'element section avec la class */
+    color: red;
+}
+
+section.select p:first-of-type{
+    color: white;
+}
+
+section.select p:last-of-type{
+    color: white;
+}
+
+
+section.select p:nth-of-type(3){
+    color: black;
+}
+
+section div{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-style: italic;
+}
+    
+section div:not(.zoneB){
+    font-weight: lighter;
+}
+section.select div.zoneA{
+    color: white;
+}
+
+#zoneC{
+    color: blue;
+}
+
+#zoneD span{
+    color: yellow;
+    background-color: brown;
+}
+
+#zone1 {
+    margin-top: 20px;
+    height: 150px;
+}
+
+#zone1 h3, #zone1 p{
+    background-color: brown;
+    color: black;
+}
+
+#zone1::before{
+    content: "rajouté avant la zone 1";
+    color: antiquewhite;
+}
+
+#zone1::after{
+    content: "Rajouté après la zone 1";
+    color: antiquewhite;
+}
+/* ::before et ::after sont des pseudo-elements permettent de generer ces elemetns "virtuels lors de l'interpretation du css uniquement */*
+
+p.psde, p.psde span{
+    background-color: brown;
+    color: #110133;
+}
+p.psde span{
+    position: relative;
+}
+p.psde span::before{
+    content:"👑";
+    position: absolute;
+    top: -16px;
+    left: -13px;
+    transform: rotate(-30deg);
+}
+
+h4+p{
+    /* selectionne la premiere balise p stiué apres un titre h4 */
+    font-weight: bolder;
+}
+
+h4~a{
+    /* selectionne toute les balises a situé apres une balise h4 */
+    background-color: aquamarine;
+}
+
+ul>li{
+    /* selectionne tout les elements li qui sont directement situé sous un element ul */
+    list-style-type: square;
+    color: blue;
+}
+
+/* selectionne tous les a qui ont un attribut title */
+a[title]{
+    background-color: peachpuff;
+    text-decoration: none;
+}
+*{
+    /*
+    Le selecteur "*" c'est pour selectionner tout les element dans ma page */
+}

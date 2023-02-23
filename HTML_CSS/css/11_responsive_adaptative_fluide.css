@@ -1,0 +1,131 @@
+/* ******************Responsive Web Design*********************
+ */
+
+ /* Le Responsive Web Design englobe les techniques de conception de contenus internet qui permettent de proposer des contenus auto-adaptable en fonction des interface de consultation utilises par le visiteur
+ 
+ Dans le cadre du responsive web disign on parle de deux caracteristique importantes: 
+    - L'ajustement automatique de la taille des elements: une page web, un element HTML ou une image peut ainsi se redimensionner en fonction de la taille du terminal utilise (ordinateur, tablette, smartphone ...)
+    - L'adaptation de l'agencement des elements: l'organisation du contenu peut etre egalement automatiquement adapté
+    
+Le Responsive Web Design est aujourd'hui un incontournable dans le monde du developpement web.*/
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    color: crimson;
+}
+
+/* **************site responsif************** */
+/* Reponsive= reactive en francais : un site reponsif c'est lorsqu'on utilise css et html epour redimensionner, masquer, déplacer le contenue pour qu'il apparaisse bien sur n'importe quel ecran */
+
+.responsive{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.zone1, .zone2, .zone3{
+    height: 100px;
+    width: 33.33%;
+}
+.zone1{
+    background-color: lightgreen;
+}
+.zone2{
+    background-color: orchid;
+}
+.zone3{
+    background-color: moccasin;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .zone1, .zone2{
+        width: 50%;
+    }
+    .zone3{
+        width: 100%;
+    }
+}
+@media screen and (max-width:991px){
+    .zone1, .zone2, .zone3{
+        width: 100%;
+    }
+}
+
+/* ************style adaptative************** */
+
+/* Grace a l'adaptattive Design l'utilisateur peut consulter le meme site web avec le meme confort visuel et sans avoir à zoomer defiler horizontalement ou toute autres manipulations qui peuvent parfois degrader l'experience utilisateur. c'est precisement pour cela que cette technique offre une tres bonne performance */
+
+.zoneAdaptatif{
+    border: 2px solid black;
+}
+@media screen and (min-width:1200px){
+    .zoneAdaptatif h2{
+        font-size: 5rem;
+    }
+    .zoneAdaptatif p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1199px){
+    .zoneAdaptatif h2{
+        font-size: 3rem;
+    }
+    .zoneAdaptatif p{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width:991px){
+    .zoneAdaptatif h2{
+        font-size: 2rem;
+    }
+    .zoneAdaptatif p{
+        font-size: 1.5rem;
+    }
+    .zoneAdaptatif{
+        height: 100%;
+    }
+}
+
+
+
+
+/* ***********site fluide************** */
+
+/* Le fluide design est une technique ou le site va s'adapter automatiquement a la resolution de l'utilisateur pour cela il suffit que tous vos blocs et element soit dimensionnes en unité fluides */
+
+.zoneFluide{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    width: 100%;
+}
+.zoneG{
+    background-color: green;
+    width: 60%;
+    padding: 20px;
+}
+.zoneD{
+    background-color: blue;
+    width: 40%;
+    padding: 20px;
+}
+@media screen and (max-width:515px){
+    .zoneG, .zoneD{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

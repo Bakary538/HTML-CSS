@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bakary fall">
+    <meta name="description" content="Bakary fall : les images html">
+    <link rel="stylesheet" type="text/css" href="css/04_les_images.css">
+    <title>Les images en HTML</title>
+</head>
+<body>
+    <h1>Les images</h1>
+
+    <!-- La balise qui va nous permettre d'inserer une image c'est la balise <img>
+        Cest une balise de type orpheline
+        L'attribut "src" : permet d'indiquer ou se trouve l'image que l'on veut inserer
+        L'attribut "alt" : (texte alternatif) on doit toujours indiquer un texte alternatif a l'image, description de l'image. Ce texte sera afficher a la place de l'image si celle-ci ne peut pas etre telecharger sur la page, ou dans les navigateur de personne handicapée (non-voyants)
+    -->
+    <section>
+        <h2 style="color: white;">1/Image inserer en HTML</h2>
+
+        <img src="img/image1.jpg" alt="image de chat">
+        <!-- Ici dans src j'ai mis le chemin relatif de l'image -->
+
+        <img src="https://i.notretemps.com/1400x787/smart/2021/05/03/trois-facons-de-distraire-votre-chat-a-la-maison.jpeg" alt="Le Goat" width="500" >
+        <img src="img/image2.jpg" alt="Un chaton gris avec des yeux bleu" title="Un chaton gris avec des yeux bleu" width="500">
+        <!-- Je rajoute une infobulle sur l'image  -->
+    </section>
+
+    <section>
+        <h2> 2 Les figures</h2>
+
+        <!-- Les figure sont des elements qui viennent enrichir le texte pour completer les information sur l'image -->
+        <!-- Une figure est plus souvent accompagné d'une legende.Pour ajouter une legende, utilisez la balise <figcaption> à l'interieur de la balise <figure> comme ceci: -->
+
+            <figure>
+                <img src="img/image3.jpg" alt="image d'un chat de race siamois">
+                <figcaption>Le Siamois est très exigeant envers son maître, c'est un chat possessif qui a besoin de recevoir beaucoup d'attention</figcaption>
+            </figure>
+    </section>
+
+    <section class="imageFond">
+        <h2>3 Les images de fond inserer en CSS</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quo atque sit? Quasi ea animi recusandae aspernatur expedita vel, magni, distinctio dolore illum iusto reprehenderit, quia quis culpa quisquam delectus.
+        Animi odio iusto ratione repellat ullam sit beatae aut harum iste, aliquam eligendi esse pariatur laudantium dolore distinctio similique atque dolores nisi soluta vero earum totam alias. Amet, vitae debitis?
+        Beatae quis voluptate similique maxime commodi vero recusandae amet perferendis porro unde minima natus, placeat ex cumque! Aut ipsum, magnam velit in, hic eveniet suscipit ea enim, sequi laudantium eaque.</p>
+
+    </section>
+
+    <section>
+        <h2>4 Image avec animation en CSS</h2>
+
+        <img src="img/cheval3.jpg" alt="Cheval" class="image">
+        <img src="img/cheval3.jpg" alt="Cheval" class="image rotation360">
+
+    </section>
+
+    <section>
+        <h2>5/ Image de type block</h2>
+        <img src="img/cheval3.jpg" alt="Cheval" class="imgCheval">
+        <img src="img/cheval3.jpg" alt="Cheval" class="imgCheval">
+        <img src="img/cheval3.jpg" alt="Cheval" class="imgCheval">
+    </section>
+    
+</body>
+</html>

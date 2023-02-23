@@ -1,0 +1,104 @@
+body{
+    background-color: brown;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* 
+Le mediaqueries est une technique qui vise a changer le design d'un site internet selon les caracteristique de l'ecran utiliser. c'est une element important du CSS 3. Pour le faire on utilise des requetes multimedias. Une requete multimedia permet d'appliquer un style en fonctio de la presence ou de la valeur des caracteristique de l'appareil. elles peuvent etre appliquer de plusieurs facon:
+    - en chargeant une feuille de style differente c'est une methode qui n'est pas recommander car on essaye de centraliser notre css autour d'une feuille de syle
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="petite_resolution.css" media="screen and (max-width=1280px)"/> => pour les ecrans qui ont une resolution inferieur a 1280px
+
+    - en ecrivant directement les regles dans la feuille de style css: 
+    Cette technique consiste a utiliser ce qu'on appelle les regle css  @: c'est pour les rules (prononcer at rules) fournit des instructions  sur ce que le  css doit executer ou comment ce comporter  si une condition est satisfaites 
+    Ici on utilise  le @media : la regle pour inclure un bloc de propietes css uniquement si une certaine condition est vrai
+    - les types d'ecran du support d'affichage il existe 4 categories de media types: 
+        ->print: destine a un support pagine au document vu sur ecran en mode apercu avant impression
+        ->sreen: pour les appareils dotes d'un ecran: ordinateur tablettes moile et etv
+        ->speach: pour les lecteurs d'ecran qui lisent par synthese vocale
+        ->all: tous les type d'appareils
+    - les proprietes : c'est par exemple une largeur de la zone d'affichage la hauteur de ma zone d'affichage une orientation du periferique 
+*/
+@media(min-width:1400px){
+    /* largeur minimale 1400px c'est le breakpoint (point de rupture). Le breakpoint sont des seuils de déclanchement. Ils servent à déterminer à quel moment les regles CSS d'une media query s'applique */
+    body{
+        background-color: pink;
+    }
+    .xLarge, .large, .medium, .small, .xSmall{
+        display: none;
+    }
+}
+
+/* Pour les grand écrans ( grand ordinateur de bureau : xLarge  -> ecran entre 1200px et 1399px*/
+
+@media(min-width:1200px) and (max-width:1399.99px){
+    body{
+        background-color: teal;
+        color: white;
+    }
+    .xLarge, .large, .medium, .small, .xSmall{
+        display: none;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px){
+    body{
+        background-color: khaki;
+    }
+    .xxLarge, .xLarge, .medium, .small, .xSmall{
+        display: none;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    body{
+        background-color: purple;
+        color: white;
+    }
+    .xxLarge, .xLarge, .large, .small, .xSmall{
+        display: none;
+    }
+}
+@media(max-width:575px){
+    body{
+        background-color: green;
+        color: white;
+    }
+    .xxLarge, .xLarge, .large, .medium, .small{
+        display: none;
+    }
+}
+/* **************************************************** */
+
+/* sur les ecrans et quand la lageur de la fenetre est au max 1280px */
+@media screen and (min-width:767px) and (max-width:1280px){
+
+}
+
+/* On rajoute only afin d'apliquer un style uniquement si l'integralite de la requete est verifiee. Il permet d'empecher les anciens navigateurs qui ne prennent pas en charge les requetes média avec les caracteristiques media d'apliquer les styles concerne  */
+
+/* en mode impression */
+@media print{
+
+}
+
+/* sur les televiseurs */
+@media tv{
+
+}
+
+/* sur tout types d'ecran */
+@media all and (min-width:767px) and (max-width:1280px){}
+
+/*  sur tout type d'ecran oriente verticalement */
+@media all and (orientation: portrait){
+
+}
+
+/* pour tous types d'ecran oriente horizontalement */
+
+@media all and (orientation:landscape){
+    
+}
